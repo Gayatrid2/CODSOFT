@@ -3,3 +3,7 @@
   margin: 0;
   font-family: sans-serif;
 }
+.main{
+  height: 95vh;
+  background-image: linear-gradient(to right top, #e7dc6c, #ffb962, #ff9182, #ff76b8, #e97bf4);
+}
