@@ -2,11 +2,11 @@
   padding: 0;
   margin: 0;
   font-family: sans-serif;
-  background-color: #ffffff;
-  background-image: url("https://www.transparenttextures.com/patterns/foggy-birds.png");
+  /* background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/foggy-birds.png"); */
 }
 .main{
-  height: 90vh;
+  height: 100vh;
   background-image: linear-gradient(to right top, #e7dc6c, #ffb962, #ff9182, #ff76b8, #e97bf4);
  padding-top: 2rem;
 }
@@ -34,6 +34,100 @@
 }
 .list-items li a:hover{
   background-color: #E7DC6C !important;
-
   transition-duration: 500ms;
+}
+.search{
+  padding: 0.6rem;
+  border-radius: 0;
+  border-width: 0;
+  background-color: #e7dd6c97;
+  font-size: 1rem;
+  border-radius: 1rem;
+}
+.img-div{
+  width: 100vw !important;
+  margin: 0;
+  height: 60vh;
+  
+}
+.team-meeting-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+.home-footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  color: white !important;
+  margin-top: 2rem;
+}
+.home-footer-item{
+  max-width: 20rem;
+  flex-grow: 1;
+}
+.home-footer-item div{
+  display: flex;
+  
+  align-items: center;
+}
+.home-footer-icon{
+  margin-right: 1rem;
+  font-size: x-large;
+  padding: 0.2rem;
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1;
+  border: 1px solid white;
+  border-radius: 100%;
+}
+.home-footer-icon:hover{
+  background-color: white;
+  color: #e7dc6c;
+  transition-duration: 200ms;
+  cursor: pointer;
+}
+.home-footer-title{
+  font-size: larger;
+}
+.img-content-div{
+  position: absolute;
+  top: 50%;
+  opacity: 1 !important;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  z-index: 999;
+  font-size: x-large;
+}
+.home-footer-btns{
+  display: flex;
+ margin-top: 1rem;
+  align-items: center;
+ 
+}
+.home-footer-btns p{
+  margin-right: 1rem;
+  font-size: large;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid white;
+}
+.home-footer-btns p:hover{
+  cursor: pointer;
+}
+.home-footer-btns div:first-child p{
+
+  background-image: linear-gradient(to right top, #e7dc6c, #ffb962, #ff9182, #ff76b8, #e97bf4);
+}
+
+.home-footer-btns div:nth-child(2) p:hover{
+  background-image: linear-gradient(to right top, #e7dc6c, #ffb962, #ff9182, #ff76b8, #e97bf4);
+  
+
 }
