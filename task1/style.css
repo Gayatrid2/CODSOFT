@@ -2,8 +2,38 @@
   padding: 0;
   margin: 0;
   font-family: sans-serif;
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/foggy-birds.png");
 }
 .main{
-  height: 95vh;
+  height: 90vh;
   background-image: linear-gradient(to right top, #e7dc6c, #ffb962, #ff9182, #ff76b8, #e97bf4);
+ padding-top: 2rem;
+}
+.header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/foggy-birds.png");
+ 
+}
+.list-items{
+  display: flex;
+}
+.list-items li a{
+  text-decoration: none;
+  color: black;
+  margin: 0 0.4rem;
+  padding: 0.8rem 0.3rem;
+ 
+}
+.list-items li{
+  list-style-type: none;
+}
+.list-items li a:hover{
+  background-color: #E7DC6C !important;
+
+  transition-duration: 500ms;
 }
