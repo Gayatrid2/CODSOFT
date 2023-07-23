@@ -2,11 +2,9 @@
   padding: 0;
   margin: 0;
   font-family: sans-serif;
-  /* background-color: #ffffff;
-  background-image: url("https://www.transparenttextures.com/patterns/foggy-birds.png"); */
-}
+  }
 .main{
-  min-height: 100vh;
+  min-height: 90vh;
   background-image: linear-gradient(to right top, #e7dc6c, #ffb962, #ff9182, #ff76b8, #e97bf4);
  padding: 2rem 0;
 }
@@ -186,6 +184,47 @@
   background-color: #E7DC6C !important;
   transition-duration: 500ms;
 }
+
+/*----------- about us -------------------- */
+.about-us-section{
+  padding: 0 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/foggy-birds.png");
+}
+.about-us-contain h1{
+  font-size: 3rem !important;
+  border-bottom: 2px solid #E97BF4 !important;
+  width: 15rem;
+  margin-bottom: 1rem;
+}
+
+.about-us-contain p{
+ word-spacing: 5px;
+ font-size: large;
+}
+.about-us-contain:first-child{
+  /* padding: 0 2rem; */
+}
+.about-us-contain{
+  width: 100%;
+  margin: 0 1rem ;
+}
+.about-us-contain:nth-child(2){
+  text-align: center;
+  
+}
+.about-us-img{
+  width: 90%;
+  object-fit: contain;
+  background-repeat: no-repeat;
+  
+}
+
+/*----------- -------- -------------------- */
 
 @media only screen and (max-width: 780px) {
   .img-content-div{
