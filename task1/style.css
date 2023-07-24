@@ -233,6 +233,15 @@
 /*----------- services -------------------- */
 .services-section{
   padding: 2rem 5rem;
+  margin-bottom: 4rem;
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/foggy-birds.png");
+  height: 50vh;
+  
+}
+.services-section h1{
+  font-size: 2.5rem !important;
+  /* border-bottom  */
   
 }
 .services-section .border-bottom{
@@ -245,12 +254,43 @@
   flex-wrap: wrap;
 }
 .services-div{
+  position: relative;
   width: 30%;
   min-width: 15rem;
 }
 .service-img{
   width: 100%;
  
+}
+.services-div-footer{
+  display: flex;
+  align-items: center;
+  position: absolute !important;
+  bottom: -13%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  background-color: #ffffff;
+  z-index: 99;
+  padding: 0.5rem 1rem;
+  right: 0%;
+  
+}
+.services-div-footer h2{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.services-div-footer i {
+  background: linear-gradient(to right top, #e7dc6c, #ffb962, #ff9182, #ff76b8, #e97bf4) !important;
+  margin-right: 1rem;
+  font-size: x-large;
+  padding: 0.5rem;
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1;
+  color: white;
+  border-radius: 100%;
+  
 }
 
 /*----------- -------- -------------------- */
@@ -284,6 +324,9 @@
 
   .services-section{
       padding: 2rem 1rem;
+  }
+  .services-div{
+      margin: 2rem 0;
   }
 
 }
