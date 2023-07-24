@@ -1,259 +1,172 @@
-*{
-  padding: 0;
-  margin: 0;
-  font-family: sans-serif;
-  }
-.main{
-  min-height: 90vh;
-  background-image: linear-gradient(to right top, #e7dc6c, #ffb962, #ff9182, #ff76b8, #e97bf4);
- padding: 2rem 0;
-}
-.header{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 1rem;
-  background-color: #ffffff;
-  background-image: url("https://www.transparenttextures.com/patterns/foggy-birds.png");
- 
-}
-.hamberg-btn{
-  display: none;
-  font-size: x-large;
-}
-.hamberg-btn{
-  text-decoration: none;
-  color: black;
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/905d13f394.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="main">
+      <header class="header">
+        <div class="title">
+          <h1 class="title-name">G-Company</h1>
+        </div>
+        <ul class="list-items">
+          <li class="list-item home"><a href="#home">Home</a></li>
+          <li class="list-item about-us">
+            <a href="#about-us">About us</a>
+          </li>
+          <li class="list-item services">
+            <a href="#services">Services</a>
+          </li>
+          <li class="list-item contact-us">
+            <a href="#contac-us">Contact us</a>
+          </li>
+        </ul>
+        <div>
+          <input class="search input" type="text" placeholder="search" />
+        </div>
+        <a class="hamberg-btn"><i class="fa-solid fa-bars"></i></a>
 
-.hamberg-btn-dropdown{
-  display: none;
-}
-.hamberg-btn-dropdown i{
-  font-size: x-large;
-}
-.hamberg-btn-dropdown a{
-  text-decoration: none;
-  color: black;
-}
-.hamberg-btn-dropdown i:hover{
-  cursor: pointer;
-}
-.list-items{
-  display: flex;
-}
-.list-items li a{
-  text-decoration: none;
-  color: black;
-  margin: 0 0.4rem;
-  padding: 0.8rem 0.3rem;
- 
-}
-.list-items li{
-  list-style-type: none;
-}
-.list-items li a:hover{
-  background-color: #E7DC6C !important;
-  transition-duration: 500ms;
-}
-.search{
-  padding: 0.6rem;
-  border-radius: 0;
-  border-width: 0;
-  background-color: #e7dd6c97;
-  font-size: 1rem;
-  border-radius: 1rem;
-}
-.img-div{
-  width: 100vw !important;
-  margin: 0;
-  height: 60vh;
-  
-}
-.team-meeting-img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  background-repeat: no-repeat;
-  opacity: 0.5;
-}
-.home-footer{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  color: white !important;
-  margin-top: 2rem;
-}
-.home-footer-item{
-  max-width: 20rem;
-  flex-grow: 1;
-}
-.home-footer-item div{
-  display: flex;
-  align-items: center;
-}
-.home-footer-icon{
-  margin-right: 1rem;
-  font-size: x-large;
-  padding: 0.2rem;
-  width: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  aspect-ratio: 1;
-  border: 1px solid white;
-  border-radius: 100%;
-}
-.home-footer-icon:hover{
-  background-color: white;
-  color: #e7dc6c;
-  transition-duration: 200ms;
-  cursor: pointer;
-}
-.home-footer-title{
-  font-size: larger;
-}
-.img-content-div{
-  position: absolute;
-  top: 50%;
-  opacity: 1 !important;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  color: white;
-  z-index: 99;
-  font-size: x-large;
-}
-.home-footer-btns{
-  display: flex;
- margin-top: 1rem;
-  align-items: center;
- 
-}
-.home-footer-btns p{
-  margin-right: 1rem;
-  font-size: large;
-  padding: 0.5rem 1rem;
-  border-radius: 1rem;
-  border: 1px solid white;
-}
-.home-footer-btns p:hover{
-  cursor: pointer;
-}
-.home-footer-btns div:first-child p{
-
-  background-image: linear-gradient(to right top, #e7dc6c, #ffb962, #ff9182, #ff76b8, #e97bf4);
-}
-
-.home-footer-btns div:nth-child(2) p:hover{
-  background-image: linear-gradient(to right top, #e7dc6c, #ffb962, #ff9182, #ff76b8, #e97bf4);
-}
-
-#seeMore{
-  display: none;
-  text-decoration: none;
-  color: black;
-  position: absolute;
-  right: 0%;
-  background-color: #ffffff;
-  background-image: url("https://www.transparenttextures.com/patterns/foggy-birds.png");
-  padding: 1rem;
-  z-index: 109;
-  top: 11.5%;
-}
-.search-drop{
-  padding: 0.6rem;
-  border-radius: 0;
-  border-width: 0;
-  background-color: #e7dd6c97;
-  font-size: 1rem;
-  border-radius: 1rem;
-}
-.list-items-drop li a{
-  text-decoration: none;
-  color: black;
-  margin: 0.5rem 0.4rem;
-  /* padding: 0.8rem 0.3rem; */
- 
-}
-.list-items-drop li{
-  margin: 0.5rem 0.4rem;
-  list-style-type: none;
-}
-.list-items-drop li a:hover{
-  background-color: #E7DC6C !important;
-  transition-duration: 500ms;
-}
-
-/*----------- about us -------------------- */
-.about-us-section{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  min-height: 50vh;
-  background-color: #ffffff;
-  background-image: url("https://www.transparenttextures.com/patterns/foggy-birds.png");
-}
-.about-us-contain h1{
-  font-size: 3rem !important;
-  border-bottom: 2px solid #E97BF4 !important;
-  width: 15rem;
-  margin-bottom: 1rem;
-}
-
-.about-us-contain p{
- word-spacing: 5px;
- font-size: large;
-}
-
-.about-us-contain{
-  margin: 0 1rem ;
-  min-width: 20rem;
-  max-width: 30rem;
-}
-.about-us-contain:nth-child(2){
-  text-align: center;
-  
-}
-.about-us-img{
- 
-  width: 90%;
-  object-fit: contain;
-  background-repeat: no-repeat;
-  
-}
-
-/*----------- -------- -------------------- */
-
-@media only screen and (max-width: 780px) {
-  .img-content-div{
-      width: 90vw;
-  }
-  .home-footer{
-      flex-direction: column;
-  }
-  .home-footer-item{
-      margin: 0.5rem 0;
-  }
-  .list-items{
-      display: none !important;
-  }
-  .search{
-      display: none !important;
-  }
-  .header{
-      justify-content: space-between;
-  }
-  .hamberg-btn{
-      display: block !important;
-  }
-  .hamberg-btn i:hover{
-      transform: scale(1.04);
-      transition-duration: 500ms;
-  }
-
-  
-
-
-}
+        <div id="seeMore">
+          <ul class="list-items-drop">
+            <li class="list-item home"><a href="#home">Home</a></li>
+            <li class="list-item about-us">
+              <a href="#about-us">About us</a>
+            </li>
+            <li class="list-item services">
+              <a href="#services">Services</a>
+            </li>
+            <li class="list-item contact-us">
+              <a href="#contac-us">Contact us</a>
+            </li>
+          </ul>
+          <div>
+            <input class="search-drop" type="text" placeholder="search" />
+          </div>
+        </div>
+      </header>
+      <section class="section home-section" id="home">
+        <div class="img-div">
+          <div class="img-content-div">
+            <p>WE ARE CREATIVE</p>
+            <h3>CREATIVE DIGITAL AGENCY</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et odio
+              voluptatem totam impedit cum iure magnam possimus laboriosam
+              tempora eveniet.
+            </p>
+            <div class="home-footer-btns">
+              <div>
+                <p>READ MORE</p>
+              </div>
+              <div>
+                <p>VISIT US</p>
+              </div>
+            </div>
+          </div>
+          <img
+            class="team-meeting-img"
+            src="../assets/landing-page.jpg"
+            alt="team meeting image"
+          />
+        </div>
+        <div class="home-footer">
+          <div class="home-footer-item">
+            <div>
+              <p class="home-footer-icon"><i class="fa-solid fa-rocket"></i></p>
+              <p class="home-footer-title">LAUNCH BUSINESS</p>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, in
+              natus error atque deleniti perferendis.
+            </p>
+          </div>
+          <div class="home-footer-item">
+            <div>
+              <p class="home-footer-icon">
+                <i class="fa-solid fa-phone-volume"></i>
+              </p>
+              <p class="home-footer-title">ONLINE SUPPORT TEAM</p>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, in
+              natus error atque deleniti perferendis.
+            </p>
+          </div>
+          <div class="home-footer-item">
+            <div>
+              <p class="home-footer-icon">
+                <i class="fa-regular fa-clock"></i>
+              </p>
+              <p class="home-footer-title">TIME MANAGEMENT</p>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, in
+              natus error atque deleniti perferendis.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section class="section about-us-section" id="about-us">
+      <div class="about-us-contain">
+        <h1>About us</h1>
+        <p class="border-bottom"></p>
+        <h3>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis,
+          magni.
+        </h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+          reprehenderit sit, exercitationem architecto pariatur eaque numquam
+          culpa neque eos itaque! Praesentium id veritatis hic ipsum nulla
+          blanditiis saepe harum placeat? Deleniti blanditiis porro accusamus
+          mollitia autem dolorum exercitationem odio unde.
+        </p>
+        <div class="home-footer-btns">
+          <div>
+            <p>READ MORE</p>
+          </div>
+        </div>
+      </div>
+      <div class="about-us-contain">
+        <img src="../assets/about-us.png" class="about-us-img" alt="" />
+      </div>
+    </section>
+    <section class="section services-section" id="services">
+      <h1>Our Services</h1>
+      <p class="border-bottom"></p>
+      <div class="services-list">
+        <div class="services-div">
+          <img class="service-img" src="../assets/landing-page.jpg" alt="" />
+          <div class="services-div-footer">
+            <i class="fa-solid fa-bars"></i>
+            <h2>USER EXPERIENCE</h2>
+          </div>
+        </div>
+        <div class="services-div">
+          <img class="service-img" src="../assets/landing-page.jpg" alt="" />
+          <div class="services-div-footer">
+            <i class="fa-solid fa-bars"></i>
+            <h2>USER EXPERIENCE</h2>
+          </div>
+        </div>
+        <div class="services-div">
+          <img class="service-img" src="../assets/landing-page.jpg" alt="" />
+          <div class="services-div-footer">
+            <i class="fa-solid fa-bars"></i>
+            <h2>USER EXPERIENCE</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section contact-us-section" id="contact-us"></section>
+  </body>
+</html>

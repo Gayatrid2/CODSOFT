@@ -197,11 +197,15 @@
 }
 .about-us-contain h1{
   font-size: 3rem !important;
-  border-bottom: 2px solid #E97BF4 !important;
-  width: 15rem;
-  margin-bottom: 1rem;
+  /* border-bottom  */
+  
 }
-
+.border-bottom{
+  border-bottom: 2px solid #E97BF4;
+  width: 20%;
+  margin-bottom: 1rem;
+  
+}
 .about-us-contain p{
  word-spacing: 5px;
  font-size: large;
@@ -222,6 +226,31 @@
   object-fit: contain;
   background-repeat: no-repeat;
   
+}
+
+/*----------- -------- -------------------- */
+
+/*----------- services -------------------- */
+.services-section{
+  padding: 2rem 5rem;
+  
+}
+.services-section .border-bottom{
+  width: 8%;
+}
+.services-list{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.services-div{
+  width: 30%;
+  min-width: 15rem;
+}
+.service-img{
+  width: 100%;
+ 
 }
 
 /*----------- -------- -------------------- */
@@ -253,7 +282,8 @@
       transition-duration: 500ms;
   }
 
-  
-
+  .services-section{
+      padding: 2rem 1rem;
+  }
 
 }
