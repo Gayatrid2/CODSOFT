@@ -146,7 +146,9 @@
 }
 
 .home-footer-btns div:nth-child(2) p:hover{
+  transition-duration: 500ms !important;
   background-image: linear-gradient(to right top, #e7dc6c, #ffb962, #ff9182, #ff76b8, #e97bf4);
+  
 }
 
 #seeMore{
@@ -376,6 +378,12 @@
   }
   .services-div{
       margin: 2rem 0;
+  }
+  .contact-us-section{
+      padding: 2rem 1rem;
+  }
+  .contact-us-input-fields{
+      padding: 1rem;
   }
 
 }
