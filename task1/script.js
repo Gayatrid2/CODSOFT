@@ -1,6 +1,6 @@
 const hambergBtn = document.querySelector(".hamberg-btn");
 const seeMore = document.querySelector("#seeMore");
-
+window.scroll({ behavior: "smooth" });
 console.log(hambergBtn);
 console.log(seeMore);
 

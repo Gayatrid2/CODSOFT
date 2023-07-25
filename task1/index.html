@@ -26,7 +26,7 @@
             <a href="#services">Services</a>
           </li>
           <li class="list-item contact-us">
-            <a href="#contac-us">Contact us</a>
+            <a href="#contact-us">Contact us</a>
           </li>
         </ul>
         <div>
@@ -167,6 +167,88 @@
         </div>
       </div>
     </section>
-    <section class="section contact-us-section" id="contact-us"></section>
+    <section class="section contact-us-section" id="contact-us">
+      <h1 class="conatct-us-heading">Contact us</h1>
+      <p class="border-bottom"></p>
+      <div class="contact-us-input-fields">
+        <div class="contact-label-input">
+          <label class="contact-label" for="full-name">Full Name</label>
+          <br />
+          <input
+            placeholder="Full Name"
+            class="contact-input"
+            id="full-name"
+            type="text"
+          />
+        </div>
+        <div class="contact-label-input">
+          <label class="contact-label" for="email-id">Email Id</label>
+          <br />
+          <input
+            placeholder="Email Id"
+            class="contact-input"
+            id="email-id"
+            type="email"
+          />
+        </div>
+        <div class="contact-label-input">
+          <label class="contact-label" for="country">Country</label>
+          <br />
+          <select class="contact-input" name="Country" id="country">
+            <option value="India">India</option>
+            <option value="Singapore">Singapore</option>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="South Africa">South Africa</option>
+          </select>
+        </div>
+        <div class="contact-label-input">
+          <label class="contact-label" for="gender">Gender</label>
+          <br />
+          <label class="label-gender" for="male">Male</label>
+          <input
+            class="input-gender"
+            name="gender"
+            id="male"
+            value="Male"
+            type="radio"
+          />
+          <label class="label-gender" for="female">Female</label>
+          <input
+            class="input-gender"
+            name="gender"
+            id="female"
+            value="Female"
+            type="radio"
+          />
+          <label class="label-gender" for="other">Other</label>
+          <input
+            class="input-gender"
+            name="gender"
+            id="other"
+            value="Other"
+            type="radio"
+          />
+        </div>
+        <div class="contact-label-input">
+          <label class="contact-label" for="message">Message</label>
+          <br />
+          <textarea
+            class="contact-input"
+            id="message"
+            name="message"
+            style="height: 200px"
+            placeholder="Write something.."
+          ></textarea>
+        </div>
+        <br />
+        <div class="home-footer-btns">
+          <div>
+            <p>SEND</p>
+          </div>
+        </div>
+      </div>
+      <br /><br /><br />
+    </section>
   </body>
 </html>

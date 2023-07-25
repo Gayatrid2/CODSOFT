@@ -232,13 +232,14 @@
 
 /*----------- services -------------------- */
 .services-section{
-  padding: 2rem 5rem;
-  margin-bottom: 4rem;
+  padding: 3rem 5rem;
+ 
   background-color: #ffffff;
   background-image: url("https://www.transparenttextures.com/patterns/foggy-birds.png");
-  height: 50vh;
+  min-height: 50vh;
   
 }
+
 .services-section h1{
   font-size: 2.5rem !important;
   /* border-bottom  */
@@ -291,6 +292,54 @@
   color: white;
   border-radius: 100%;
   
+}
+
+/*----------- -------- -------------------- */
+
+
+
+/*----------- contact us -------------------- */
+.contact-us-section{
+  padding: 2rem 5rem;
+ 
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/foggy-birds.png");
+  min-height: 50vh;
+}
+.conatct-us-heading{
+  font-size: 2.5rem !important;
+}
+
+.contact-us-section .border-bottom{
+  width:8% !important;
+}
+.contact-us-input-fields{
+  background-color: #a3a3a387;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  padding: 2rem;
+  border-radius: 0.2rem;
+}
+.contact-label{
+  font-size: larger;
+ 
+}
+.contact-input{
+  font-size: larger;
+  width: 100%;
+  height: 2rem;
+  margin-top: 0.5rem;
+}
+.contact-label-input{
+  margin: 1.5rem 0;
+}
+.label-gender{
+  font-size: large;
+}
+.input-gender{
+  transform: scale(1.5);
+  margin-right: 0.5rem;
+  margin-left: 0.2rem;
+  margin-top: 0.5rem;
 }
 
 /*----------- -------- -------------------- */
