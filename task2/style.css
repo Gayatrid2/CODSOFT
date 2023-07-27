@@ -76,15 +76,66 @@ nav {
 
 
 /* ----------------- home  -------------------- */
+.section{
+    padding: 2rem 4rem;
+}
+.home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .home-heading{
     font-size: xx-large;
     font-weight: 500;
+    word-spacing: 4px;
 }
 
 .home-para{
     font-size: large;
     font-weight: 400;
+    word-spacing: 10px;
+    margin-bottom: 2rem;
 }
+.home-div{
+    width: 50%;
+}
+.home-div:nth-child(2){
+    text-align: center;
+}
+.home-img{
+    width: 70%;
+}
+.waving-emoji{
+    font-size: 2.5rem;
+    animation-name: waving-animate;  
+    animation-duration: 2.5s;        
+    animation-iteration-count: infinite;  
+    transform-origin: 70% 70%;       
+    display: inline-block;
+}
+@keyframes waving-animate {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(20.0deg) }  
+   20% { transform: rotate(-10.0deg) }
+   30% { transform: rotate(15.0deg) }
+   40% { transform: rotate(-5.0deg) }
+   50% { transform: rotate(11.0deg) }
+   60% { transform: rotate( 1.0deg) }  
+  100% { transform: rotate( 0.0deg) }
+}
+.socials{
+    display: flex;
+    align-items: center;
+}
+.socials a{
+    text-decoration: none;
+    margin-right: 1rem;
+    max-width: 2.5rem;
+}
+.socials img{
+    width: 100%;
+}
+
 /* ----------------- -------------------- */
 
 @media only screen and (max-width: 950px) {
