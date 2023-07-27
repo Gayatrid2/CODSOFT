@@ -77,12 +77,14 @@ nav {
 
 /* ----------------- home  -------------------- */
 .section{
-    padding: 2rem 4rem;
+    padding: 2rem 5rem;
 }
 .home{
+    margin-top: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 .home-heading{
     font-size: xx-large;
@@ -98,6 +100,8 @@ nav {
 }
 .home-div{
     width: 50%;
+    flex-grow: 1;
+    min-width: 30rem;
 }
 .home-div:nth-child(2){
     text-align: center;
@@ -124,6 +128,7 @@ nav {
   100% { transform: rotate( 0.0deg) }
 }
 .socials{
+  
     display: flex;
     align-items: center;
 }
@@ -135,13 +140,74 @@ nav {
 .socials img{
     width: 100%;
 }
+.home-btns{
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+}
+.home-btns div{
+    border: 2px solid #5B63B7;
+    border-radius: 1rem;
+    margin-right: 1.5rem;
+}
+.home-btns div:first-child{
+    background-color: #5B63B7;
+}
+.home-btns div:first-child a{
+    color: white !important;
+}
+
+.home-btns div:nth-child(2):hover{
+    background-color: #5B63B7;
+    transition-duration: 500ms;
+}
+.home-btns div a {
+    color: black;
+    text-decoration: none;
+}
+.home-btns div a:hover{
+    color: white;
+    transition-duration: 500ms;
+}
+.home-btns div a p{
+    padding: 1rem 2rem;
+    font-weight: 500;
+}
 
 /* ----------------- -------------------- */
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 500px) {
+    .home-div{
+        min-width: 20rem;
+    }
+    .home-btns div{
+        margin-right: 1rem;
+    }
+    .home-btns div a p{
+        padding: 0.6rem 0.8rem;
+        
+    }
+}
+
+@media only screen and (max-width: 890px) {
+    .section{
+        padding: 2rem 1rem;
+    }
+    .home{
+        justify-content: center;
+    }
+    .home-div{
+        margin: 1rem 0;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .section{
+        padding: 2rem 1.5rem;
+    }
   .menu {
     flex-direction: column;
-    /* background-color: #151418; */
+    background-color: #fff;
     align-items: start;
     position: absolute;
     padding: 10px;
