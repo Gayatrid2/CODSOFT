@@ -194,7 +194,6 @@ nav {
 .skills-heading{
   font-size: xx-large;
   font-family: 'Playfair Display', serif !important;
-
 }
 .skills-div{
   width: 50%;
@@ -215,6 +214,44 @@ nav {
 
 /* ----------------- -------------------- */
 
+/* ----------------- open source -------------------- */
+.open-source{
+  min-height: 80vh;
+ 
+}
+.open-source-cards{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.open-source-card{
+  border: 1px solid #CBCCFF;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  flex-grow: 1;
+  min-width: 20rem;
+  width: 35%;
+  margin: 1rem;
+  min-height: 160px;
+}
+.open-source-card:hover{
+  box-shadow: none;
+}
+.open-source-card span{
+  color: rgb(247, 244, 106);
+  font-size: 1.5rem;
+}
+.open-source-card p{
+  margin-bottom: 0.5rem;
+}
+.open-source p:first-child{
+  font-size: x-large;
+}
+
+/* ----------------- -------------------- */
+
 @media only screen and (max-width: 500px) {
     .home-div{
         min-width: 20rem;
@@ -228,6 +265,15 @@ nav {
     .home-btns div a p{
         padding: 0.6rem 0.8rem;
         
+    }
+    .open-source-card{
+      border: 1px solid rebeccapurple;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      padding: 0.8rem;
+      border-radius: 0.3rem;
+      flex-grow: 1;
+      min-width: 20rem;
+      margin: 1rem 0.2rem;
     }
 }
 
