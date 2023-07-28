@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display:wght@400;500&display=swap');
 * {
   padding: 0;
   margin: 0;
@@ -80,6 +81,7 @@ nav {
     padding: 2rem 5rem;
 }
 .home{
+  min-height: 80vh;
     margin-top: 2rem;
     display: flex;
     justify-content: space-between;
@@ -107,7 +109,7 @@ nav {
     text-align: center;
 }
 .home-img{
-    width: 70%;
+    width: 80%;
 }
 .waving-emoji{
     font-size: 2.5rem;
@@ -176,9 +178,49 @@ nav {
 
 /* ----------------- -------------------- */
 
+/* ----------------- skills -------------------- */
+.skill-content ul li{
+  text-decoration: none;
+  list-style-type: none;
+  margin-bottom: 5px;
+}
+.skills{
+  min-height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.skills-heading{
+  font-size: xx-large;
+  font-family: 'Playfair Display', serif !important;
+
+}
+.skills-div{
+  width: 50%;
+  flex-grow: 1;
+  min-width: 30rem;
+}
+.skills-div img{
+  width: 90%;
+}
+.skill-icons {
+  margin-bottom: 2rem;
+
+}
+.skill-icons i{
+  font-size: 3rem;
+  margin: 1rem;
+}
+
+/* ----------------- -------------------- */
+
 @media only screen and (max-width: 500px) {
     .home-div{
         min-width: 20rem;
+    }
+    .skills-div{
+      min-width: 20rem;
     }
     .home-btns div{
         margin-right: 1rem;
@@ -198,6 +240,12 @@ nav {
     }
     .home-div{
         margin: 1rem 0;
+    }
+    .skills{
+      justify-content: center;
+    }
+    .skills-div{
+      margin: 1rem 0;
     }
 }
 
