@@ -249,6 +249,23 @@ nav {
 .open-source p:first-child{
   font-size: x-large;
 }
+.more-projects{
+  margin-top: 1rem;
+  text-align: center;
+}
+.more-projects div{
+  display: inline-block;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+background-color: #5B63B7;
+}
+.more-projects div a{
+  color: white;
+    font-weight: 500;
+}
+.more-projects div a p{
+  padding: 1rem 2rem;
+}
 
 /* ----------------- -------------------- */
 
