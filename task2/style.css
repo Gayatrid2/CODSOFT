@@ -78,7 +78,7 @@ nav {
 
 /* ----------------- home  -------------------- */
 .section{
-    padding: 2rem 5rem;
+    padding: 2rem 5rem !important;
 }
 .home{
   min-height: 80vh;
@@ -320,6 +320,46 @@ background-color: #5B63B7;
 /* ----------------- -------------------- */
 
 
+/* -----------------contact-me -------------------- */
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px;
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+.contact-me-content {
+  border-radius: 5px;
+  border: 1px solid #67676742;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: rgba(230, 230, 230, 0.363);
+  padding: 3rem;
+  margin-top: 2rem;
+}
+
+.send-btn a p{
+  display: inline-block;
+  border: 2px solid #5B63B7;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+
+}
+.send-btn a{
+  color: black;
+}
+.send-btn a p:hover{
+  color: white;
+  background-color: #5B63B7;
+  transition-duration: 500ms;
+}
+
+/* ----------------- -------------------- */
+
+
 
 @media only screen and (max-width: 500px) {
     .home-div{
@@ -352,11 +392,15 @@ background-color: #5B63B7;
       padding-bottom: 2rem;
       
     }
+    .contact-me-content {
+
+      padding: 0.5rem;
+    }
 }
 
 @media only screen and (max-width: 890px) {
     .section{
-        padding: 2rem 1rem;
+        padding: 2rem 1rem !important;
     }
     .home{
         justify-content: center;
@@ -374,7 +418,7 @@ background-color: #5B63B7;
 
 @media only screen and (max-width: 990px) {
     .section{
-        padding: 2rem 1.5rem;
+        padding: 2rem 1.5rem !important;
     }
   .menu {
     flex-direction: column;
