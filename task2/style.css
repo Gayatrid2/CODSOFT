@@ -359,7 +359,31 @@ input[type=text], select, textarea {
 
 /* ----------------- -------------------- */
 
-
+footer{
+  text-align: center;
+  padding: 1.5rem 1rem;
+  background-color: #CBCCFF;
+  color: white;
+}
+footer .mail{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  color: black;
+  text-decoration: underline;
+  margin: 0.5rem;
+}
+footer .mail svg{
+  margin-right: 0.5rem;
+}
+footer .mail a{
+  text-decoration: none;
+  color: black;
+}
+footer p:nth-child(2){
+  color: rgb(84, 84, 84);
+}
 
 @media only screen and (max-width: 500px) {
     .home-div{
