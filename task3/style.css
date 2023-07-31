@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  /* font-family: 'Poppins', sans-serif; */
+
+  .cal-body{
+    width: 50%;
+    border: 1px solid red;
+    margin: 0 auto;
+    margin-top: 6%;
+    min-height: 70vh;
+    border-radius: 1rem;
+    background-color: #2096f3;
+    padding: 3rem;
+  }
+  .cal-body .input-div{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .cal-body #cal-input{
+    border: none !important;
+    text-decoration: none !important;
+    width: 100%;
+    background-color: #e3f2fd;
+    font-size: 4rem;
+    border-radius: 0.5rem;
+    font-family: 'Orbitron', sans-serif !important;
+    
+  }
+  
+  .cal-body #cal-input:focus{
+    outline: none;
+}
+.cal-operator{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.cal-digits-row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* width: 100%; */
+    border: 1px solid yellow;
+}
+.cal-operator div{
+    width: 25% !important;
+    border: 1px solid red;
+    padding: 0.5rem;
+    margin: 2rem;
+    text-align: center;
+}
+.cal-digits-equal{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.cal-digits{
+    width: 75%;
+    padding: 0.5rem;
+    margin: 2rem;
+    border: 1px solid green;
+}
+.cal-equal{
+    width: 25%;
+    padding: 0.5rem;
+    /* margin: 2rem; */
+    border: 1px solid green;
+}
+
+@media only screen and (max-width: 1000px) {
+    .cal-body{
+        margin-top: 8%;
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .cal-body{
+        margin-top: 10%;
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .cal-body{
+        margin-top: 15%;
+        width: 95%;
+    }
+}
