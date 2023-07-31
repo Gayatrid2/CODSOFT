@@ -16,10 +16,10 @@
     border: 1px solid red;
     margin: 0 auto;
     margin-top: 6%;
-    min-height: 70vh;
+    min-height: 60vh;
     border-radius: 1rem;
     background-color: #2096f3;
-    padding: 3rem;
+    padding: 2rem;
   }
   .cal-body .input-div{
     width: 100%;
@@ -40,42 +40,51 @@
     outline: none;
 }
 .cal-operator{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
     width: 100%;
-}
-.cal-digits-row{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    /* width: 100%; */
-    border: 1px solid yellow;
+    grid-area: operator;
 }
 .cal-operator div{
-    width: 25% !important;
+    /* width: 25% !important; */
     border: 1px solid red;
     padding: 0.5rem;
-    margin: 2rem;
+    margin: 1rem;
     text-align: center;
 }
-.cal-digits-equal{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-}
 
-.cal-digits{
-    width: 75%;
+.cal-digits-row{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.cal-digits-row div{
+    border: 1px solid red;
     padding: 0.5rem;
-    margin: 2rem;
-    border: 1px solid green;
+    margin: 1rem;
+}
+.cal-digits-equal{
+    display: grid;
+    /* grid-template-columns: auto auto auto; */
+    gap: 10px;
+    grid-template-areas:
+    'operator operator operator operator operator operator operator'
+    'header header header header header rightt rightt'
+  
+    
+}
+.cal-digits{
+    grid-area: header;
 }
 .cal-equal{
-    width: 25%;
+    grid-area: rightt;
+    border: 1px solid red;
     padding: 0.5rem;
-    /* margin: 2rem; */
-    border: 1px solid green;
+    margin: 1rem;
+    text-align: center;
+}
+.cal-equal div{
+    /* border: 1px solid red; */
+    
 }
 
 @media only screen and (max-width: 1000px) {
