@@ -43,7 +43,6 @@
     display: grid;
     grid-template-columns: auto auto auto auto;
     width: 100%;
-    grid-area: operator;
 }
 .cal-operator div{
     /* width: 25% !important; */
@@ -64,11 +63,9 @@
 }
 .cal-digits-equal{
     display: grid;
-    /* grid-template-columns: auto auto auto; */
-    gap: 10px;
+    grid-template-columns: auto auto;
     grid-template-areas:
-    'operator operator operator operator operator operator operator'
-    'header header header header header rightt rightt'
+    'header header header header header header header rightt  rightt'
   
     
 }
@@ -76,7 +73,7 @@
     grid-area: header;
 }
 .cal-equal{
-    grid-area: rightt;
+    grid-area: rightt; 
     border: 1px solid red;
     padding: 0.5rem;
     margin: 1rem;
