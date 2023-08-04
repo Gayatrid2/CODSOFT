@@ -10,6 +10,7 @@ const equal = document.querySelector(".cal-equal-val");
 let ans = null;
 let number = null;
 let op = null;
+let isEqualPress = false;
 
 const checkLastCharIsOp = (str) => {
   if (str.length === 0) {
@@ -28,7 +29,7 @@ operatorsDiv?.forEach((operator, index) => {
   operator.onclick = (event) => {
     let child = operator.firstElementChild;
     child = child.getAttribute("id");
-
+    isEqualPress = false;
     if (number || number === 0) {
       if (child === "add") {
         if (!checkLastCharIsOp(String(calInput.value))) {
@@ -68,46 +69,58 @@ operatorsDiv?.forEach((operator, index) => {
   };
 });
 
+let dotPress = false;
 digitsDiv?.forEach((operator, index) => {
   operator.onclick = (event) => {
-    console.log(ans);
-    const child = operator.firstElementChild;
-    const other = child.getAttribute("id");
-    const num = Number(child.getAttribute("id"));
+    let child = operator.firstElementChild;
+    let other = child.getAttribute("id");
+    let num = Number(child.getAttribute("id"));
+    let tempNum = "";
     if (other === "C") {
+      isEqualPress = false;
       calInput.value = "";
       ans = null;
+      location.reload();
       return;
     }
-    number = num;
-    if (!ans && other !== ".") {
-      ans = num;
+    if (!isEqualPress) {
+      if (!ans) {
+        ans = num;
+      }
+      number = num;
+      if (other !== "dot") {
+        dotPress = false;
+        calInput.value = String(calInput.value) + String(num);
+      }
+      if (
+        other === "dot" &&
+        calInput.value?.length > 0 &&
+        calInput.value !== "."
+      ) {
+        calInput.value = String(calInput.value) + ".";
+        tempNum = num * 10;
+        dotPress = true;
+      }
+      if (dotPress) {
+        num = tempNum + num;
+      }
+      console.log(num);
+
+      if (op === "+") {
+        ans = ans + num;
+        console.log(ans);
+      } else if (op === "-") {
+        ans = ans - num;
+        console.log(ans);
+      } else if (op === "*") {
+        ans = ans * num;
+        console.log(ans);
+      } else if (op === "/" && num !== 0) {
+        ans = ans / num;
+        console.log(ans);
+      }
     }
-    if (
-      calInput?.value[calInput.value?.length - 1] !== "." &&
-      calInput.value[calInput.value?.length - 1] !== "."
-    ) {
-      ans = ans / 10;
-    }
-    if (op === "+") {
-      ans = ans + num;
-    } else if (op === "-") {
-      ans = ans - num;
-    } else if (op === "*") {
-      ans = ans * num;
-    } else if (op === "/" && num !== 0) {
-      ans = ans / num;
-    }
-    if (
-      (other === "dot" &&
-        ans &&
-        calInput.value[calInput.value?.length - 1] !== ".") ||
-      ans === 0
-    ) {
-      calInput.value = calInput.value + ".";
-    } else if (other !== "dot" && (ans || ans === 0)) {
-      calInput.value = calInput.value + String(num);
-    }
+
     operator.style.boxShadow = "none";
     setTimeout(() => {
       operator.style.boxShadow =
@@ -118,6 +131,9 @@ digitsDiv?.forEach((operator, index) => {
 
 equalDiv.onclick = (event) => {
   console.log(ans);
+  op = null;
+  // calInput.value = String(ans);
+  isEqualPress = true;
   equalDiv.style.boxShadow = "none";
   setTimeout(() => {
     equalDiv.style.boxShadow =
