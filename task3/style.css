@@ -75,6 +75,7 @@ body{
     display: grid;
     grid-template-columns: auto auto auto;
 }
+
 .cal-digits-row div{
      border-radius: 0.1rem;
     background-color: #8F5FA9;
@@ -115,10 +116,7 @@ border: 1px solid #7b385eb3;
     color: white;
     font-size: 1.2rem;
 }
-.cal-dot{
-    font-size: 1.4rem;
- 
-}
+
 .cal-ac{
     font-size: 1rem !important;
 }
