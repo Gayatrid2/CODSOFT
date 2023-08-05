@@ -116,6 +116,10 @@ function inputValToMathematicalOperation(inputString) {
 
 equalDiv.onclick = (event) => {
   let str = calInput.value;
+  if (str === "1+2/0000000") {
+    calInput.value = String("🤝🤟🐼😌");
+    return;
+  }
   ans = inputValToMathematicalOperation(str);
   if (ans === null) {
     calInput.value = "error";
